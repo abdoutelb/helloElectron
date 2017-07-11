@@ -1,5 +1,6 @@
 const {app,BrowserWindow} = require('electron');
 const path = require('path');
+const {setMainMenu} = require('./main-menu.js')
 let mainWindow;
 
 app.on('ready',()=>{
@@ -10,4 +11,5 @@ app.on('ready',()=>{
     mainWindow.on('ready-to-show',()=>{
         mainWindow.show();
     });
+    setMainMenu();
 })
