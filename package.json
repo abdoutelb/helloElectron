@@ -1,15 +1,23 @@
 {
-  "name": "HelloElectron",
+  "name": "hello-electron",
+  "productName": "To-DO App",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron index.js"
+    "start": "electron index.js",
+    "package": "build"
   },
   "keywords": [],
   "author": "Abdoutelb",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^1.6.11"
+    "electron": "^1.6.11",
+    "electron-icon-maker": "0.0.3",
+    "electron-packager": "^8.7.2"
+  },
+  "build": {
+    "appId": "com.Abdoutelb.Todos",
+    "files": "!build-assets{*/}"
   }
 }
